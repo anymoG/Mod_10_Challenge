@@ -7,6 +7,7 @@
   --brand-white: #f2f2f2; /* Off-white */
   --max-width: 1200px;
   --spacing: 2rem;
+  --card-shadow: 0 2px 5px rgba(0,0,0,0.1)
 }
 
 body {
@@ -115,6 +116,60 @@ figcaption {
   background-color: #f2f2f2;
   color: #59331d;
 }
+/* Cards */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: row;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-header {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+  color: var(--secondary-color);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
 footer {
   color: #f2f2f2;
   text-align: center;
